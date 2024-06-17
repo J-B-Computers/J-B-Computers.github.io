@@ -1,9 +1,8 @@
-// server.js
-const express = require('express'); // Ensure this is declared only once
+const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
-const port = 3000;
+const port = 3001; // Change this line to use a different port
 
 // Middleware
 app.use(bodyParser.json());
