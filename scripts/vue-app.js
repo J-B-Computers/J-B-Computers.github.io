@@ -1,6 +1,7 @@
+// Create a new Vue instance
 new Vue({
-    el: '#vue-root',
+    el: '#vue-root', // Target the element with id 'vue-root'
     data: {
-        message: 'Hello, Vue!'
+        message: 'Hello, Vue!' // Define a data property 'message'
     }
 });
