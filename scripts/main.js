@@ -1,6 +1,6 @@
 // Fetch content from JSON file and update HTML elements
 fetch('data/content.json')
-    .then(response => response.json()) // Parse the JSON data from the response
+    .then(response => response.json())
     .then(data => {
         // Update the HTML elements with data from the JSON file
         document.querySelector('h1').innerText = data.title; // Update the h1 element

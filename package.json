@@ -1,0 +1,26 @@
+{
+  "name": "jb-computers",
+  "version": "1.0.0",
+  "description": "JB Computers Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 8000", // Command to start the local server
+    "build": "webpack" // Command to build the project using Webpack
+  },
+  "dependencies": {
+    "jquery": "^3.6.0", // Dependency for jQuery
+    "react": "^18.0.0", // Dependency for React
+    "react-dom": "^18.0.0", // Dependency for ReactDOM
+    "vue": "^2.6.14" // Dependency for Vue.js
+  },
+  "devDependencies": {
+    "webpack": "^5.0.0", // Development dependency for Webpack
+    "less": "^4.0.0", // Development dependency for LESS
+    "babel-loader": "^8.0.0", // Development dependency for Babel loader
+    "style-loader": "^3.0.0", // Development dependency for style loader
+    "css-loader": "^6.0.0", // Development dependency for CSS loader
+    "less-loader": "^10.0.0" // Development dependency for LESS loader
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
