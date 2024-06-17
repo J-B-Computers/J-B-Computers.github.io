@@ -1,26 +1,14 @@
 {
   "name": "jb-computers",
   "version": "1.0.0",
-  "description": "JB Computers Website",
+  "description": "JB Computers website",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "build": "webpack"
+    "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
     "body-parser": "^1.19.0",
-    "mongoose": "^5.12.3",
-    "ejs": "^3.1.6"
-  },
-  "devDependencies": {
-    "webpack": "^5.0.0",
-    "less": "^4.0.0",
-    "babel-loader": "^8.0.0",
-    "style-loader": "^3.0.0",
-    "css-loader": "^6.0.0",
-    "less-loader": "^10.0.0"
-  },
-  "author": "Your Name",
-  "license": "MIT"
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
 }

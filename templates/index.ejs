@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><content.title></title>
+    <title><%= content.title %></title>
     <link rel="stylesheet" href="/styles/main.css">
     <!-- React and ReactDOM via CDN -->
     <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin></script>
     <!-- Vue.js via CDN -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <!-- jQuery via CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Include header partial -->
-    <include('header')>
+    <%- include('header') %>
 
     <main>
-        <h1><content.title></h1>
-        <p><content.description></p>
-        <button id="dynamic-button"><content.buttonText></button>
+        <h1><%= content.title %></h1>
+        <p><%= content.description %></p>
+        <button id="dynamic-button"><%= content.buttonText %></button>
 
         <!-- React Container for react-app.js -->
         <div id="react-root"></div>
@@ -35,7 +37,7 @@
     </main>
 
     <!-- Include footer partial -->
-    <include('footer')>
+    <%- include('footer') %>
 
     <!-- JavaScript files -->
     <script src="/scripts/main.js"></script>
