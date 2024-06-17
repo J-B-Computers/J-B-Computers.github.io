@@ -1,5 +1,6 @@
 // Include React and ReactDOM via CDN in your HTML or install via npm for a more complex setup
 const e = React.createElement;
+const { createRoot } = ReactDOM;
 
 // Define a React component
 class HelloWorld extends React.Component {
@@ -9,5 +10,6 @@ class HelloWorld extends React.Component {
     }
 }
 
-// Render the React component inside the element with id 'react-root'
-ReactDOM.render(e(HelloWorld), document.getElementById('react-root'));
+// Create a root and render the React component inside the element with id 'react-root'
+const root = createRoot(document.getElementById('react-root'));
+root.render(e(HelloWorld));
