@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content.title %></title>
+    <title><content.title></title>
     <link rel="stylesheet" href="/styles/main.css">
     <!-- React and ReactDOM via CDN -->
     <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
@@ -13,12 +13,12 @@
 </head>
 <body>
     <!-- Include header partial -->
-    <%- include('header') %>
+    <include('header')>
 
     <main>
-        <h1><%= content.title %></h1>
-        <p><%= content.description %></p>
-        <button id="dynamic-button"><%= content.buttonText %></button>
+        <h1><content.title></h1>
+        <p><content.description></p>
+        <button id="dynamic-button"><content.buttonText></button>
 
         <!-- React Container for react-app.js -->
         <div id="react-root"></div>
@@ -35,7 +35,7 @@
     </main>
 
     <!-- Include footer partial -->
-    <%- include('footer') %>
+    <include('footer')>
 
     <!-- JavaScript files -->
     <script src="/scripts/main.js"></script>
