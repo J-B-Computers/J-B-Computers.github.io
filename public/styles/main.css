@@ -1,36 +1,134 @@
 /* Basic styling for the body */
 body {
-    font-family: Arial, sans-serif; /* Set font family */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    text-align: center; /* Center-align text */
-    background-image: url('https://raw.githubusercontent.com/J-B-Computers/J-B-Computers.github.io/main/assets/images/background.jpg'); /* Background image */
-    background-size: cover; /* Cover the entire background */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent repeating the background image */
-  }
-  
-  /* Styling for the h1 element */
-  body h1 {
-    color: #333; /* Set text color */
-  }
-  
-  /* Styling for the p element */
-  body p {
-    color: #666; /* Set text color */
-  }
-  
-  /* Styling for the button */
-  body button {
-    background-color: #4CAF50; /* Set background color */
-    color: white; /* Set text color */
-    padding: 10px 20px; /* Set padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Set border radius */
-    cursor: pointer; /* Set cursor to pointer */
-  }
-  
-  /* Styling for the button on hover */
-  body button:hover {
-    background-color: #3d8b40; /* Set background color on hover */
-  }
+  font-family: Arial, sans-serif; /* Set font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  text-align: center; /* Center-align text */
+  background-image: url('https://raw.githubusercontent.com/J-B-Computers/J-B-Computers.github.io/main/assets/images/background.jpg'); /* Background image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating the background image */
+  color: #ddd; /* Set default text color */
+}
+
+/* Styling for the h1 element */
+body h1 {
+  color: #fff; /* Set text color to white */
+}
+
+/* Styling for the p element */
+body p {
+  color: #bbb; /* Set text color to light grey */
+}
+
+/* Styling for the button */
+body button {
+  background-color: #4CAF50; /* Set background color */
+  color: white; /* Set text color */
+  padding: 10px 20px; /* Set padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Set border radius */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Styling for the button on hover */
+body button:hover {
+  background-color: #3d8b40; /* Set background color on hover */
+}
+
+/* Styling for the header */
+header {
+  background-color: rgba(0, 0, 0, 0.7); /* Set background color with transparency */
+  color: white; /* Set text color */
+  padding: 20px; /* Set padding */
+  position: fixed; /* Fix header to top */
+  width: 100%; /* Full width */
+  top: 0; /* Position at the top */
+  z-index: 1000; /* Ensure header is above other content */
+}
+
+header h1 {
+  margin: 0; /* Remove default margin */
+}
+
+header nav ul {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Display list items in a row */
+  justify-content: center; /* Center the list items */
+}
+
+header nav ul li {
+  margin: 0 20px; /* Set margin */
+}
+
+header nav ul li a {
+  color: white; /* Set text color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Set border radius */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+  background-color: #4CAF50; /* Set background color on hover and active */
+}
+
+/* Styling for the sidebar */
+aside {
+  background-color: rgba(0, 0, 0, 0.5); /* Set background color with transparency */
+  color: #ddd; /* Set text color */
+  padding: 20px; /* Set padding */
+  text-align: left; /* Left-align text */
+  position: fixed; /* Fix sidebar to the left */
+  top: 100px; /* Position below the header */
+  bottom: 0; /* Stretch to the bottom */
+  width: 200px; /* Set width */
+  z-index: 900; /* Ensure sidebar is above content but below header */
+}
+
+aside h2 {
+  margin-top: 0; /* Remove top margin */
+  color: #fff; /* Set text color to white */
+}
+
+/* Styling for the footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.7); /* Set background color with transparency */
+  color: white; /* Set text color */
+  padding: 20px; /* Set padding */
+  position: fixed; /* Fix footer to the bottom */
+  bottom: 0; /* Position at the bottom */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure footer is above other content */
+}
+
+/* Basic styling for the main content */
+main {
+  padding: 20px; /* Set padding */
+  margin-left: 220px; /* Add margin to avoid overlap with sidebar */
+  margin-top: 80px; /* Add margin to avoid overlap with header */
+}
+
+/* Styling for the dynamic button */
+#dynamic-button {
+  background-color: #4CAF50; /* Set background color */
+  color: white; /* Set text color */
+  padding: 10px 20px; /* Set padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Set border radius */
+  cursor: pointer; /* Set cursor to pointer */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Styling for the dynamic button on hover */
+#dynamic-button:hover {
+  background-color: #3d8b40; /* Set background color on hover */
+}
+
+/* Styling for the jQuery section */
+#jquery-section {
+  margin-top: 20px; /* Add top margin */
+  color: #ddd; /* Set text color */
+}

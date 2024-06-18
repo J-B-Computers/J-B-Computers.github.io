@@ -1,5 +1,19 @@
 {
-    "title": "JB COMPUTERS",
-    "description": "We assure Satisfaction & Quality",
-    "buttonText": "Click e to say HELLO!!!"
-}
+    "header": {
+      "title": "Welcome to JB Computers",
+      "nav": [
+        { "text": "Home", "link": "index.html" },
+        { "text": "Page 1", "link": "page-1.html" },
+        { "text": "Page 2", "link": "page-2.html" },
+        { "text": "Page 3", "link": "page-3.html" },
+        { "text": "Page 4", "link": "page-4.html" }
+      ]
+    },
+    "sidebar": {
+      "title": "Sidebar Content",
+      "content": "This is the sidebar content."
+    },
+    "footer": {
+      "text": "&copy; 2024 JB Computers. All rights reserved."
+    }
+  }

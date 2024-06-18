@@ -14,29 +14,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Inline header -->
-    <header>
-        <h1>Welcome to JB Computers</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="PAGE-2.html">About</a></li>
-                <li><a href="PAGE-3.html">Services</a></li>
-                <li><a href="PAGE-4.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Inline sidebar -->
-    <aside>
-        <h2>Sidebar Content</h2>
-        <p>This is the sidebar content.</p>
-    </aside>
-
+    <header id="header"></header>
+    <aside id="sidebar"></aside>
     <main>
-        <h1></h1>
-        <p></p>
-        <button id="dynamic-button"></button>
+        <h1>Main Content</h1>
+        <p>This is the main content area.</p>
+        <button id="dynamic-button">Click Me</button>
 
         <!-- React Container for react-app.js -->
         <div id="react-root"></div>
@@ -48,19 +31,16 @@
 
         <!-- jQuery Section for jquery-app.js -->
         <div id="jquery-section">
-            <p id="jquery-text"></p>
+            <p id="jquery-text">Hello, jQuery!</p>
         </div>
     </main>
-
-    <!-- Inline footer -->
-    <footer>
-        <p>&copy; 2024 JB Computers. All rights reserved.</p>
-    </footer>
+    <footer id="footer"></footer>
 
     <!-- JavaScript files -->
     <script src="public/scripts/main.js"></script>
     <script src="public/scripts/react-app.js"></script>
     <script src="public/scripts/vue-app.js"></script>
     <script src="public/scripts/jquery-app.js"></script>
+    <script src="public/scripts/load-content.js"></script>
 </body>
 </html>
