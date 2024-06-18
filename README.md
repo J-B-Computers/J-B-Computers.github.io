@@ -15,10 +15,38 @@ This repository contains the source code for the JB Computers website. The websi
 - `package.json`: npm package file.
 - `webpack.config.js`: Configuration for Webpack.
 
-## Running the Local Server
-
-To run a local server, you can use Python or Node.js:
-
-### Using Python
-```sh
-python -m http.server 8000
+/J-B-Computers.github.io
+│
+├── assets
+│   ├── fonts
+│   └── icons
+│
+├── data
+│   └── content.json
+│
+├── images
+│   └── background.jpg
+│
+├── public
+│   ├── scripts
+│   │   ├── jquery-app.js
+│   │   ├── main.js
+│   │   ├── react-app.js
+│   │   ├── utils.js
+│   │   └── vue-app.js
+│   ├── styles
+│   │   ├── components.less
+│   │   ├── main.css
+│   │   └── main.less
+│
+├── views
+│   ├── partials
+│   │   ├── header.ejs
+│   │   ├── footer.ejs
+│   │   └── sidebar.ejs
+│   └── index.ejs
+│
+├── package.json
+├── server.js
+├── README.md
+└── webpack.config.js
