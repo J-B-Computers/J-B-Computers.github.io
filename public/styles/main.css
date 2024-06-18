@@ -4,7 +4,7 @@ body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     text-align: center; /* Center-align text */
-    background-image: url('https://raw.githubusercontent.com/J-B-Computers/J-B-Computers.github.io/main/images/background.jpg'); /* Background image */
+    background-image: url('https://raw.githubusercontent.com/J-B-Computers/J-B-Computers.github.io/main/assets/images/background.jpg'); /* Background image */
     background-size: cover; /* Cover the entire background */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent repeating the background image */
