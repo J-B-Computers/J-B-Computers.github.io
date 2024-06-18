@@ -1,0 +1,32 @@
+// components.less
+
+// Button component styles
+.button {
+    background-color: @primary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(@primary-color, 10%);
+    }
+}
+
+// Card component styles
+.card {
+    border: 1px solid @secondary-color;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .card-title {
+        font-size: 1.5em;
+        color: @secondary-color;
+    }
+
+    .card-content {
+        color: #666;
+    }
+}

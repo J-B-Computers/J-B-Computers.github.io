@@ -1,0 +1,36 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif; /* Set font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center-align text */
+    background-image: url('https://raw.githubusercontent.com/J-B-Computers/J-B-Computers.github.io/main/images/background.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+  }
+  
+  /* Styling for the h1 element */
+  body h1 {
+    color: #333; /* Set text color */
+  }
+  
+  /* Styling for the p element */
+  body p {
+    color: #666; /* Set text color */
+  }
+  
+  /* Styling for the button */
+  body button {
+    background-color: #4CAF50; /* Set background color */
+    color: white; /* Set text color */
+    padding: 10px 20px; /* Set padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Set border radius */
+    cursor: pointer; /* Set cursor to pointer */
+  }
+  
+  /* Styling for the button on hover */
+  body button:hover {
+    background-color: #3d8b40; /* Set background color on hover */
+  }
