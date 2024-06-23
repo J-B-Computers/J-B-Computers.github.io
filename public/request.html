@@ -15,7 +15,7 @@
             max-width: 600px;
             margin: 50px auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(0, 0, 0, 0.8); /* Darker background for the form */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -23,11 +23,13 @@
         .form-container h1 {
             text-align: center;
             margin-bottom: 20px;
+            color: #fff; /* White text color for title */
         }
 
         .form-container label {
             display: block;
             margin-bottom: 5px;
+            color: #fff; /* White text color for labels */
         }
 
         .form-container input,
@@ -38,6 +40,8 @@
             margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            background-color: #444; /* Dark background for inputs */
+            color: #fff; /* White text color for inputs */
         }
 
         .form-container button {
@@ -63,8 +67,8 @@
     </style>
 </head>
 <body>
-    <header id="header"></header>
-    <aside id="sidebar"></aside>
+    <header id="header" style="margin-bottom: 20px;"></header>
+    <aside id="sidebar" style="margin-bottom: 20px;"></aside>
     <main>
         <section class="form-container">
             <h1>Request Form</h1>
@@ -103,7 +107,7 @@
             </form>
         </section>
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer" style="margin-top: 20px;"></footer>
 
     <script src="scripts/load-content.js"></script>
     <script src="scripts/utils.js" type="module"></script>
