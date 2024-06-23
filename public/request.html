@@ -5,12 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Request</title>
     <link rel="stylesheet" href="styles/main.css">
+    <style>
+        body {
+            background-color: #2e8b57; /* Dark green background */
+            color: #fff; /* White text color */
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-container input,
+        .form-container textarea,
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header id="header"></header>
     <aside id="sidebar"></aside>
     <main>
-        <section>
+        <section class="form-container">
             <h1>Request Form</h1>
             <form id="contactForm">
                 <div>
@@ -22,6 +78,26 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email">
                     <div id="emailError" class="error-message">Email is required.</div>
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                    <div id="subjectError" class="error-message">Subject is required.</div>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                    <div id="messageError" class="error-message">Message is required.</div>
+                </div>
+                <div>
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                        <option value="">Select a category</option>
+                        <option value="support">Support</option>
+                        <option value="sales">Sales</option>
+                        <option value="general">General</option>
+                    </select>
+                    <div id="categoryError" class="error-message">Category is required.</div>
                 </div>
                 <button type="submit">Submit</button>
             </form>
@@ -66,8 +142,44 @@
                 emailError.style.display = 'none';
             }
 
+            // Subject validation
+            const subject = document.getElementById('subject');
+            const subjectError = document.getElementById('subjectError');
+            if (subject.value.trim() === '') {
+                subjectError.textContent = 'Subject is required.';
+                subjectError.style.display = 'block';
+                isValid = false;
+            } else {
+                subjectError.style.display = 'none';
+            }
+
+            // Message validation
+            const message = document.getElementById('message');
+            const messageError = document.getElementById('messageError');
+            if (message.value.trim() === '') {
+                messageError.textContent = 'Message is required.';
+                messageError.style.display = 'block';
+                isValid = false;
+            } else {
+                messageError.style.display = 'none';
+            }
+
+            // Category validation
+            const category = document.getElementById('category');
+            const categoryError = document.getElementById('categoryError');
+            if (category.value.trim() === '') {
+                categoryError.textContent = 'Category is required.';
+                categoryError.style.display = 'block';
+                isValid = false;
+            } else {
+                categoryError.style.display = 'none';
+            }
+
             if (isValid) {
                 alert('Form submitted successfully!');
+                // Optionally, handle form submission here
+                // For local server, send data to the server
+                // For GitHub Pages, you can use a service like Formspree or just show the alert
             }
         });
     </script>
