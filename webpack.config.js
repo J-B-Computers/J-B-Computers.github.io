@@ -1,29 +1,29 @@
 const path = require('path');
 
 module.exports = {
-  entry: '.public/scripts/main.js', // Entry point for the application
+  entry: './public/scripts/main.js', // Corrected entry point
   output: {
-    filename: 'bundle.js', // Output bundled file
-    path: path.resolve(__dirname, 'dist') // Output directory
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
       {
-        test: /\.js$/, // Transform JavaScript files
-        exclude: /node_modules/, // Exclude node_modules directory
+        test: /\.js$/,
+        exclude: /node_modules/,
         use: {
-          loader: 'babel-loader', // Use Babel loader for ES6+ syntax
+          loader: 'babel-loader',
         }
       },
       {
-        test: /\.less$/, // Transform LESS files
+        test: /\.less$/,
         use: [
-          'style-loader', // Inject CSS into the DOM
-          'css-loader', // Interpret @import and url() like import/require()
-          'less-loader' // Compile LESS to CSS
+          'style-loader',
+          'css-loader',
+          'less-loader'
         ]
       }
     ]
   },
-  mode: 'development' // Set mode to development
+  mode: 'development'
 };
