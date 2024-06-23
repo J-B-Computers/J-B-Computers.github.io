@@ -72,7 +72,7 @@
     <main>
         <section class="form-container">
             <h1>Request Form</h1>
-            <form id="contactForm">
+            <form id="contactForm" action="https://formspree.io/f/mgvwwkdv" method="POST">
                 <div>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name">
@@ -180,10 +180,33 @@
             }
 
             if (isValid) {
-                alert('Form submitted successfully!');
-                // Optionally, handle form submission here
-                // For local server, send data to the server
-                // For GitHub Pages, you can use a service like Formspree or just show the alert
+                // Formspree submission
+                const form = document.getElementById('contactForm');
+                if (form.action.includes('formspree')) {
+                    form.submit();
+                } else {
+                    // Local server submission
+                    fetch('/submit-form', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            name: name.value,
+                            email: email.value,
+                            subject: subject.value,
+                            message: message.value,
+                            category: category.value,
+                        }),
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+                        alert(data);
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+                }
             }
         });
     </script>
