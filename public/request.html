@@ -6,60 +6,76 @@
     <title>Request</title>
     <link rel="stylesheet" href="styles/main.css">
     <style>
+        /* Overall Page Styling */
         body {
             background-color: #2e8b57; /* Dark green background */
             color: #fff; /* White text color */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
         }
 
+        /* Form Container */
         .form-container {
             max-width: 600px;
             margin: 50px auto;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.8); /* Darker background for the form */
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            background: linear-gradient(135deg, #3498db, #2980b9); /* Blue gradient */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .form-container h1 {
             text-align: center;
-            margin-bottom: 20px;
-            color: #fff; /* White text color for title */
+            margin-bottom: 30px;
+            color: #fff; 
+            font-size: 2.5em; /* Larger title */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
         }
 
+        /* Form Elements */
         .form-container label {
             display: block;
-            margin-bottom: 5px;
-            color: #fff; /* White text color for labels */
+            margin-bottom: 8px;
+            color: #fff;
+            font-weight: bold;
         }
 
         .form-container input,
         .form-container textarea,
         .form-container select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background-color: #444; /* Dark background for inputs */
-            color: #fff; /* White text color for inputs */
+            width: calc(100% - 22px); /* Adjust for padding */
+            padding: 12px 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+            color: #333; /* Darker text for contrast */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
         }
 
+        .form-container textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        /* Submit Button */
         .form-container button {
-            background-color: #4CAF50;
+            background-color: #2ecc71; /* Green button */
             color: white;
-            padding: 10px 20px;
+            padding: 15px 30px;
             border: none;
-            border-radius: 4px;
+            border-radius: 25px; /* Rounded corners */
             cursor: pointer;
-            width: 100%;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease; /* Smooth transition */
         }
 
         .form-container button:hover {
-            background-color: #45a049;
+            background-color: #27ae60; /* Darker green on hover */
         }
 
+        /* Error Messages */
         .error-message {
-            color: red;
+            color: #e74c3c; /* Red error message */
             font-size: 0.9rem;
             margin-bottom: 10px;
             display: none;
