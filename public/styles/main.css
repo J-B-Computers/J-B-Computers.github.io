@@ -35,44 +35,55 @@ body button {
 body button:hover {
   background-color: #3d8b40; /* Set background color on hover */
 }
-
-/* Styling for the header */
+/* Header Styling */
 header {
-  background-color: rgba(0, 0, 0, 0.7); /* Set background color with transparency */
-  color: white; /* Set text color */
-  padding: 20px; /* Set padding */
-  position: fixed; /* Fix header to top */
-  width: 100%; /* Full width */
-  top: 0; /* Position at the top */
-  z-index: 1000; /* Ensure header is above other content */
+  background-color: rgba(0, 0, 0, 0.8); /* Slightly darker background for better contrast */
+  color: #fff;
+  padding: 15px 20px; /* Adjust padding to taste */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box; /* Ensure padding and border are included in the total width */
 }
 
 header h1 {
-  margin: 0; /* Remove default margin */
+  margin: 0;
+  font-size: 1.8rem; /* Adjust font size for a balanced look */
+  line-height: 1.2; /* Improve readability */
 }
 
 header nav ul {
-  list-style: none; /* Remove default list style */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-  display: flex; /* Display list items in a row */
-  justify-content: center; /* Center the list items */
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;  /* Add some top margin to separate from title */
+  display: flex;
+  justify-content: flex-end; /* Align navigation to the right */
 }
 
 header nav ul li {
-  margin: 0 20px; /* Set margin */
+  margin: 0 15px; /* Adjust spacing between links */
 }
 
 header nav ul li a {
-  color: white; /* Set text color */
-  text-decoration: none; /* Remove underline */
-  padding: 10px 20px; /* Add padding */
-  border-radius: 5px; /* Set border radius */
-  transition: background-color 0.3s ease; /* Smooth transition */
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px; /* Adjust padding for a more comfortable click area */
+  border-radius: 4px;
+  transition: all 0.3s ease; /* Smoother transition on all properties */
 }
 
 header nav ul li a:hover, header nav ul li a.active {
-  background-color: #4CAF50; /* Set background color on hover and active */
+  background-color: #4CAF50; /* Green highlight */
+  color: #fff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  header nav ul {
+      justify-content: center; /* Center nav on smaller screens */
+  }
 }
 
 /* Styling for the sidebar */

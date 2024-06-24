@@ -13,14 +13,15 @@ document.addEventListener('DOMContentLoaded', function () {
 function loadHeader(headerData) {
     const header = document.getElementById('header');
     header.innerHTML = `
-        <h1>${headerData.title}</h1>
-        <nav>
+        <h1 class="header-title">${headerData.title}</h1>
+        <nav class="header-nav">
             <ul>
                 ${headerData.nav.map(item => `<li><a href="${item.link}" class="${window.location.pathname.includes(item.link) ? 'active' : ''}">${item.text}</a></li>`).join('')}
             </ul>
         </nav>
     `;
 }
+
 
 function loadSidebar(sidebarData) {
     const sidebar = document.getElementById('sidebar');
